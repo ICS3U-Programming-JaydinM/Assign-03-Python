@@ -15,18 +15,18 @@ def main():
         number_one = float(number_one)
         number_two = float(number_two)
 
-    # Restarts program if an exception is thrown
+    # Restarts program if numbers are not entered
     except ValueError:
-        print("You must enter an integer.\n")
+        print("You must enter numbers.\n")
         return main()
 
-    # Executed if number one is grater then number two
+    # Executed if number one is greater than number two
     if number_one > number_two:
-        print(f"{number_one} is grater then {number_two}")
+        print(f"{number_one} is greater than {number_two}")
 
     # Executed if number two is grater than number one
     elif number_one < number_two:
-        print(f"{number_two} is greater then {number_one}")
+        print(f"{number_two} is greater than {number_one}")
 
     # Executed if number one and number are equal
     elif number_one == number_two:
